@@ -30,7 +30,7 @@ Built with Vite/React and TypeScript.
 ### Set up your OMDb API key
 - Create a .env file in the root directory.
 - Add your OMDb API key:
-  ***VITE_API_KEY=your_api_key_here
+  ***VITE_API_KEY=your_api_key_here***
 
 ### Start the development server
 ***npm run dev***
