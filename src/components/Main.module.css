@@ -1,0 +1,17 @@
+.main {
+    margin-top: 2.4rem;
+    height: calc(100vh - 14rem - 3 * 2.4rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+
+    justify-content: center;
+}
+
+@media (width >= 48em) {
+    .main {
+        height: calc(100vh - 7.2rem - 3 * 2.4rem);
+        align-items: center;
+    }
+}

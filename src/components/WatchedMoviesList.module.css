@@ -1,0 +1,93 @@
+.list {
+    list-style: none;
+    padding: 0.8rem 0;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.list li {
+    position: relative;
+    column-gap: 2.4rem;
+    font-size: 1.2rem;
+    align-items: center;
+
+    padding: 1.6rem 3.2rem;
+    border-bottom: 1px solid var(--color-background-100);
+}
+
+.list li {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list li:hover {
+    background-color: var(--color-background-100);
+}
+
+.watched {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2.4rem;
+}
+
+.watched img {
+    width: 100%;
+    grid-row: 1 / -1;
+    grid-column: 1 / span 1;
+}
+
+.watched h3 {
+    font-size: 1.6rem;
+    grid-row: 1 / 2;
+    grid-column: 2 / span 1;
+}
+.watched div {
+    grid-row: 2 / -1;
+    grid-column: 2 / span 1;
+}
+
+.watched p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.watchedDetails {
+    grid-area: details;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.btnDelete {
+    position: absolute;
+    top: 1.8rem;
+    right: 2.4rem;
+
+    height: 1.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-background-900);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: var(--color-red-dark);
+}
+
+@media (width >= 36em) {
+    .list li {
+        font-size: 1.6rem;
+    }
+
+    .watched h3 {
+        font-size: 1.8rem;
+    }
+}
