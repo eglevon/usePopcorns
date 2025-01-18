@@ -8,7 +8,7 @@ interface NumResultsProps {
 function NumResults({ movies }: NumResultsProps) {
     return (
         <p className={styles.numResults}>
-            Found <strong>{movies.length}</strong> results
+            Found <strong>{movies.length}</strong> {movies.length === 1 ? 'result' : 'results'}
         </p>
     );
 }

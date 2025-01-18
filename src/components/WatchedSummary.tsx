@@ -21,7 +21,9 @@ function WatchedSummary({ watched }: WatchedSummaryProps) {
             <div>
                 <p>
                     <span>#️⃣</span>
-                    <span>{watched.length} movies</span>
+                    <span>
+                        {watched.length} {watched.length === 1 ? 'movie' : 'movies'}
+                    </span>
                 </p>
                 <p>
                     <span>⭐️</span>
