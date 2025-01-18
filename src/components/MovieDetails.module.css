@@ -8,7 +8,7 @@
 }
 
 .details section {
-    padding: 4rem;
+    padding: 2rem; /*4rem */
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -47,6 +47,7 @@
     font-weight: 600;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2.4rem;
 }
 
@@ -92,6 +93,9 @@
         font-size: 1.4rem;
     }
 
+    .details section {
+        padding: 4rem;
+    }
     .detailsOverview h2 {
         font-size: 2.4rem;
     }
